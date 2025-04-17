@@ -1,0 +1,47 @@
+{
+    "name": "house_robbery",
+    "label": "House Robbery",
+    "checkInName": "Criminal",
+    "icon": "house-damage",
+    "headquarters": {
+        "x": 206.33532,
+        "y": -1851.644,
+        "z": 0,
+        "h": 0
+    },
+    "npc": {
+        "jobid": "house_robbery",
+        "headquarters": {
+            "x": 206.33532,
+            "y": -1851.644,
+            "z": 27.480291,
+            "h": 146.43402
+        },
+        "data": {
+            "pedType": 4,
+            "model": "s_m_y_ammucity_01",
+            "distance": 150,
+            "settings": [
+                {
+                    "mode": "invincible",
+                    "active": true
+                },
+                {
+                    "mode": "ignore",
+                    "active": true
+                },
+                {
+                    "mode": "freeze",
+                    "active": true
+                }
+            ],
+            "flags": {
+                "isJobEmployer": true
+            }
+        }
+    },
+    "acceptPendingTimeout": 30000,
+    "vpn": true,
+    "capacity": 2,
+    "enabled": false
+}

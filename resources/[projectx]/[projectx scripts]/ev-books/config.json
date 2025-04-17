@@ -1,0 +1,126 @@
+{
+    "pacific": {
+        "type": "contract",
+        "photo1": "https://imgur.com/42drqSA.png",
+        "photo2": "https://imgur.com/HMCHlvN.png",
+        "designationStamp": "https://imgur.com/6zfsNzU.png",
+        "contractNo": "MCMZCIC.VI",
+        "contractName": "Pacific City Bank",
+        "targetName": "Pacific Bank",
+        "location": "Pacific",
+        "optional": true,
+        "optionalMain": "Team Uniform (Optional)",
+        "optionalMap": [
+            {"msg": "Jacket 1"},
+            {"msg": "Jacket 2"},
+            {"msg": "Jacket 3"}
+        ],
+        "messages": [
+            {"msg": "Your crew will rob the Bay City Bank under the following conditions:"},
+            {"msg": "- You will rob the bank under the guise of filming the movie: HARD TO KILL"},
+            {"msg": "- You will designate a directo, the action star, actors, and film crew. You may use hostages to be extrasor film crew. You are encourage to involve officers in roles if they are willing."},
+            {"msg": "- After the robbery is done, you are to film and escape scene worthy of an action blockbuster movie."},
+            {"msg": "- Lose any chasing PD"},
+            {"msg": "This contract can only be marked complete when you return home with the take AND this document."}
+        ]
+    },
+    "booster": {
+        "type": "contract",
+        "photo1": "https://imgur.com/42drqSA.png",
+        "photo2": "https://cdn.discordapp.com/attachments/1000197346619039895/1010634976162762962/unknown.png",
+        "designationStamp": "https://imgur.com/6zfsNzU.png",
+        "contractNo": "00012993842",
+        "contractName": "S+ Car Boost",
+        "targetName": "Audi R8 Hycade",
+        "location": "Pacific",
+        "optional": true,
+        "optionalMain": "",
+        "optionalMap": [
+            {"msg": ""},
+            {"msg": ""},
+            {"msg": ""}
+        ],
+        "messages": [
+            {"msg": "Your crew will find the Audi R8 Hycade needed to boost under these conditions:"},
+            {"msg": "- You will not harm any civilians along the way, as this is a incognito contract."},
+            {"msg": "- Only you and 3 members of your crew is allowed to do the contract for payout."},
+            {"msg": "- Lose any of the PD that is chasing you."},
+            {"msg": "- Failure to lose PD and bringing them to the location you will be blacklisted from all other contracts."},
+            {"msg": "- After the boost is done, bring the car to the scrap yard in Sandy Shores."},
+            {"msg": "- No teaming with other groups is allowed, if you are found helping another group you will be blacklisted."},
+            {"msg": "This contract can only be marked complete when you return the car to the scrap yard WITH the document."}
+        ]
+    },
+    "Crafting": {
+        "type": "contract",
+        "photo1": "https://cdn.discordapp.com/attachments/764273642057498644/1010658242558443551/unknown.png",
+        "photo2": "https://cdn.discordapp.com/attachments/764273642057498644/1010658257766981782/unknown.png",
+        "designationStamp": "https://imgur.com/6zfsNzU.png",
+        "contractNo": "00012993842",
+        "contractName": "Container Hunting",
+        "targetName": "The Big Red Container",
+        "location": "La Mesa",
+        "optional": true,
+        "optionalMain": "Requirements",
+        "optionalMap": [
+            {"msg": "A key"},
+            {"msg": "300 Plastic"},
+            {"msg": "Common Sense"}
+        ],
+        "messages": [
+            {"msg": "You have an oppertunity to come across a gun crafting bench, you must follow these terms:"},
+            {"msg": "- If you find the weapon bench, you must keep it to yourself and safe gaurd it."},
+            {"msg": "- You require a special key that a cop is holding on him, Find the Cop, Kill him, and Rob him!"},
+            {"msg": "- Lose any of the PD that is chasing you."},
+            {"msg": "- Failure to lose PD and bringing them to the location you will be blacklisted from all other contracts."},
+            {"msg": "- After the container and the key is found, you must bring the key and materials to the location."},
+            {"msg": "- No teaming with other groups is allowed, if you are found helping another group you will be blacklisted."},
+            {"msg": "This contract can only be marked complete when you return the Document, the key, and bring some materials."}
+        ]
+    },
+    "comic" : {
+        "type": "comic",
+        "frontPage": "https://imgur.com/PEdkyzp.jpg",
+        "backFrontPage": "https://imgur.com/PEdkyzp.jpg",
+        "frontBackPage": "https://imgur.com/PEdkyzp.jpg",
+        "backPage": "https://imgur.com/PEdkyzp.jpg",
+        "pages": [
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"}
+        ]
+    },
+    "casinoblueprints" : {
+        "type": "comic",
+        "frontPage" : "https://i.imgur.com/kOKGn8d.png",
+        "backFrontPage" : "https://i.imgur.com/kOKGn8d.png",
+        "frontBackPage" : "https://i.imgur.com/CpdJRYl.png",
+        "backPage" : "https://i.imgur.com/CpdJRYl.png",
+        "pages": [
+            {"img" : "https://i.imgur.com/kOKGn8d.png"},
+            {"img" :  "https://i.imgur.com/DrJKkoQ.jpeg"},
+            {"img" : "https://i.imgur.com/6RFTxtd.png"},
+            {"img" : "https://i.imgur.com/KWoL8jQ.png"},
+            {"img" : "https://i.imgur.com/2JGDkDV.jpeg"},
+            {"img" : "https://i.imgur.com/yQK2fsU.jpeg"},
+            {"img" : "https://i.imgur.com/PYaI6qY.png"},
+            {"img" : "https://i.imgur.com/g3gOXQ8.png"},
+            {"img" : "https://i.imgur.com/30AhDK6.jpeg"},
+            {"img" : "https://i.imgur.com/AK1uEoa.jpeg"},
+            {"img" : "https://i.imgur.com/iXvHoNw.png"},
+            {"img" : "https://i.imgur.com/vc5siU8.png"},
+            {"img" : "https://i.imgur.com/4vBecRk.jpeg"},
+            {"img" : "https://i.imgur.com/0r2rN8p.jpeg"},
+            {"img" : "https://i.imgur.com/g5xkFIw.png"},
+            {"img" : "https://i.imgur.com/pHPNPXn9.png"},
+            {"img" : "https://i.imgur.com/CpdJRYl.png"}
+        ]
+    }
+}

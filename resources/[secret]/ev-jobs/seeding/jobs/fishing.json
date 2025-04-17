@@ -1,0 +1,47 @@
+{
+    "name": "fishing",
+    "label": "Fishing",
+    "checkInName": "Fisher",
+    "icon": "fish",
+    "headquarters": {
+        "x": -335.83563232422,
+        "y": 6106.2534179688,
+        "z": 0,
+        "h": 0
+    },
+    "npc": {
+        "jobid": "fishing",
+        "headquarters": {
+            "x": -335.83563232422,
+            "y": 6106.2534179688,
+            "z": 31.448036193848,
+            "h": 230.94131469727
+        },
+        "data": {
+            "pedType": 4,
+            "model": "a_m_m_farmer_01",
+            "distance": 230.94131469727,
+            "settings": [
+                {
+                    "mode": "invincible",
+                    "active": true
+                },
+                {
+                    "mode": "ignore",
+                    "active": true
+                },
+                {
+                    "mode": "freeze",
+                    "active": true
+                }
+            ],
+            "flags": {
+                "isJobEmployer": true
+            }
+        }
+    },
+    "acceptPendingTimeout": 30000,
+    "vpn": false,
+    "capacity": 4,
+    "enabled": true
+}

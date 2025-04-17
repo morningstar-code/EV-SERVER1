@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bmarket &vArr; </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src='https://use.fontawesome.com/releases/v5.15.4/js/all.js'></script>
+
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container" id="noselect">
+        <div class="laptop-ui">
+            <div class="task-bar">
+    
+                <div class="time">
+                    <span id="current-day"></span> <span id="current-time"></span>
+                </div>
+                <div class="menu" id="system-actions-trigger">
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <i class="fas fa-battery-three-quarters"></i>
+                    
+                    <i class="fas fa-sort"></i>
+                </div>
+            </div>
+            
+            <div class="ff-item" id="blackmarket-trigger">
+                <img src="https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg" style="padding-left: 35px;"class="ff-icons">
+                <p style="color: white; text-align: center;">????</p>
+            </div>
+
+
+            <!-- SYSTEM ACTIONS -->
+            <div class="system-actions">
+                <div id="close"><i class="fas fa-power-off"></i>
+                </div>
+                <i class="fas fa-times-circle" id="close-actions-menu"></i>
+            </div>
+            <!-- FIREFOX DEFAULT -->
+            <div class="firefox-browser" id="firefox-browser">
+                <div class="firefox-header" id="firefox-header">
+                    <div class="current-page">
+                        <i class="fas fa-globe-europe" style="padding:5px;color:#31455E;"></i>
+                        <p class="current-page-title" style="padding:5px;">Tor Browser</p>
+                        <p class="current-page-title" style="padding:5px;">Tor Browser</p>
+
+                        <i class="fas fa-times" style="padding:8px;font-size:10px;cursor:pointer;" id="close-firefox"></i>
+                    </div>
+                    <div class="firefox-buttons">
+                            <i class="fas fa-circle" id="minimalize"></i>
+                            <i class="fas fa-circle" id="bigger2"></i>
+                            <i class="fas fa-circle" id="close-firefox-2"></i>
+                    </div>
+                    <div class="firefox-searchbar">
+                        <i class="fas fa-arrow-left" style="padding:5px;cursor:pointer;"></i>
+                        <i class="fas fa-arrow-right" style="padding:5px;cursor:pointer;"></i>
+                        <i class="fas fa-redo" style="padding:5px;cursor:pointer;" id="firefox-refresh"></i>
+                        <input type="text" placeholder="http://tor.onion" class="zoekmachine">
+                        <i class="far fa-star" style="float:right;padding:6px;cursor:pointer;" id="favorites"></i>
+                        <i class="fas fa-ellipsis-v" style="float:right;padding:6px;cursor:pointer;"></i>
+                    </div>
+                    <div class="firefox-body">
+                        <div class="firefox-websites">
+                            <div class="ff-item">
+                                <img src="https://i.kym-cdn.com/photos/images/original/001/292/055/7b4.png" class="ff-icons">
+                                <p style="color: white;">Tor Home</p>
+                            </div>  
+                            <div class="ff-item" id="blackmarket-trigger">
+                                <img src="https://cdn.discordapp.com/attachments/731087119099101194/873400380355121222/output-onlinepngtools.png" class="ff-icons">
+                                <p style="color: white;">Tuner Shop</p>
+                            </div>
+                            <!-- <div class="ff-item" id="JimmysRepo-trigger">
+                                <img src="https://cdn.discordapp.com/attachments/731087119099101194/873422866387972106/a7ea6d3247f142a5dbc70b182fdd16e5.png" class="ff-icons">
+                                <p style="color: white;">Akwell Repo's</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- blackmarket -->
+            <div class="blackmarket-browser" id="blackmarket-browser">
+                <div class="firefox-header" id="firefox-header">
+                    <div class="current-page">
+                        <i class="fas fa-globe-europe" style="padding:5px;color:#31455E;"></i>
+                        <p class="current-page-title" style="padding:5px;">Vehicle Parts</p>
+                        <i class="fas fa-times" style="padding:8px;font-size:10px;cursor:pointer;" id="blackmarket-close"></i>
+                    </div>
+                    <div class="firefox-buttons">
+                            <i class="fas fa-circle" id="minimalize"></i>
+                            <i class="fas fa-circle" id="bigger"></i>
+                            <i class="fas fa-circle" id="close-blackmarket-2"></i>
+                    </div>
+                    <div class="firefox-searchbar">
+                        <i class="fas fa-arrow-left" style="padding:5px;cursor:pointer;" id="last-page"></i>
+                        <i class="fas fa-arrow-right" style="padding:5px;cursor:pointer;"></i>
+                        <i class="fas fa-redo" style="padding:5px;cursor:pointer;" id="blackmarket-refresh"></i>
+                        <input type="text" placeholder="http://Rhodinium.net" class="zoekmachine">
+                        <i class="far fa-star" style="float:right;padding:6px;cursor:pointer;" id="favorites"></i>
+                        <i class="fas fa-ellipsis-v" style="float:right;padding:6px;cursor:pointer;"></i>
+                    </div>
+                    <div class="blackmarket-body">
+                        <div class="blackmarket-header">
+                            <h1 style='margin: auto 63rem; color: rgb(255, 255, 255); font-size:2rem; white-space: nowrap; font-weight: bold; width: 10rem; height: 10rem; font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;'>Tuner Shop</h1>
+                        </div>
+                        <div class="blackmarket-info">
+                            All Orders will be sent immediately and you will be given a location to pickup @! <u id="blackmarket-info-close" style="float:center;"><br><br>Close</u>
+                        </div>
+                        <div class="blackmarket-main-wrapper">
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Brake Parts (X)
+                                    <p>$250</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950413634285232179/np_brake_parts_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-1-order">
+                                    Purchase
+                                </div>
+                            </div>
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Axle Parts (X)
+                                    <p>$8000</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950413430475595856/np_axle_parts_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-3-order">
+                                    Purchase
+                                </div>
+                            </div>
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Radiator Parts (X)
+                                    <p>$1000</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950413706548887682/np_cooling_parts_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-5-order">
+                                    Purchase
+                                </div>
+                            </div>
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Clutch Parts (X)
+                                    <p>$100</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950413656963842108/np_clutch_parts_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-7-order">
+                                    Purchase
+                                </div>
+                            </div>
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Transmission Parts (X)
+                                    <p>$950</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950413706364346398/np_transmission_parts_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-10-order">
+                                    Purchase
+                                </div>
+                            </div>
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Vehicle Electronics (X)
+                                    <p>$2000</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950413706754400306/np_electronic_parts_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-13-order">
+                                    Purchase
+                                </div>
+                            </div>
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Fuel Injectors (X)
+                                    <p>$2500</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950413707148660766/np_fuel_injectors_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-14-order">
+                                    Purchase
+                                </div>
+                               
+                            </div>
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Tire Repair Kit (X)
+                                    <p>$2500</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950414524115222659/np_tire_kit_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-14-order">
+                                    Purchase
+                                </div>
+                               
+                            </div>
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Body Panels (X)
+                                    <p>$2500</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950413620175585300/np_body_panels_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-14-order">
+                                    Purchase
+                                </div>
+                               
+                            </div>
+                            <div class="blackmarket-item">
+                                <div class="blackmarket-item-info">
+                                    Engine Parts (X)
+                                    <p>$2500</p>
+                                </div>
+                                <img src="https://cdn.discordapp.com/attachments/936951705294241813/950413706955739156/np_engine_parts_x.png">
+                                <div class="blackmarket-item-button" id="blackmarket-14-order">
+                                    Purchase
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div id='processTXT'>Processing The Purchase...</div>
+
+                <div class='loader'></div>
+
+            </div>
+            <!-- <div class="os-bar">
+                <div class="os-bar-tasks">
+                    <i class="fab fa-firefox" id="firefox-button" style="cursor:pointer;" ></i>
+                </div>
+                <div class="os-bar-menu">
+                    <i class="fas fa-bars" id="app-menu"></i>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="js/ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/browse.js"></script>
+</body>
+</html>

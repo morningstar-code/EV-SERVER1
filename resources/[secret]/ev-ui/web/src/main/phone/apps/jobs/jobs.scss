@@ -1,0 +1,53 @@
+.jobs-container {
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    -webkit-animation: fadeinpls;
+    animation: fadeinpls;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobs-container-inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+
+    >div {
+        margin-bottom: 32px; //32px //10px
+    }
+
+    .job-description-paygrade {
+        display: flex;
+
+        >span {
+            >span {
+                padding: 4px 6px;
+            }
+        }
+    }
+
+    .job-description-info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        >div {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-right: 4px;
+            }
+        }
+    }
+}

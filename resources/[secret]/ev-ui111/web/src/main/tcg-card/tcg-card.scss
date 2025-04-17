@@ -1,0 +1,43 @@
+.tcg-card {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tcg-card--display-case {
+    justify-content: center;
+}
+
+.tcg-card--show {
+    justify-content: flex-start;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.tcg-card__headline {
+    top: 25vh;
+    color: #95ef77;
+    text-shadow: 0 .1388888889vh .2777777778vh #222831;
+    font-weight: 600;
+    font-size: 3.3333333333vh;
+    position: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.tcg-card__tip {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    bottom: 25vh;
+    background: #95ef77;
+    color: #222831;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .2777777778vh .4166666667vh;
+    border-radius: .2777777778vh;
+    font-size: 1.1111111111vh;
+    font-weight: 700;
+}

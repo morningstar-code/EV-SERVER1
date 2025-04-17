@@ -1,0 +1,125 @@
+{
+    "garage_id": "pd_shared_bike",
+    "name": "PD Shared Bike Garage",
+    "type": "state",
+    "shared": true,
+    "parking_limit": 10,
+    "location": {
+        "vectors": {
+            "x": 426.77,
+            "y": -984.0,
+            "z": 25.71
+        },
+        "length": 33.2,
+        "width": 6.8,
+        "options": {
+            "heading": 0,
+            "minZ": 24.66,
+            "maxZ": 28.26,
+            "debugPoly": false
+        },
+        "hidden": true
+    },
+    "vehicle_types": ["land"],
+    "parking_spots": [
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 89.0,
+            "coords": {
+                "x": 426.37,
+                "y": -998.75,
+                "z": 25.18
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 89.0,
+            "coords": {
+                "x": 427.19,
+                "y": -995.49,
+                "z": 25.18
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 89.0,
+            "coords": {
+                "x": 427.16,
+                "y": -992.03,
+                "z": 25.18
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 89.0,
+            "coords": {
+                "x": 427.0,
+                "y": -987.64,
+                "z": 25.18
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 89.0,
+            "coords": {
+                "x": 426.66,
+                "y": -984.51,
+                "z": 25.18
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 89.0,
+            "coords": {
+                "x": 426.72,
+                "y": -980.98,
+                "z": 25.18
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 89.0,
+            "coords": {
+                "x": 426.79,
+                "y": -976.7,
+                "z": 25.18
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 89.0,
+            "coords": {
+                "x": 426.75,
+                "y": -973.21,
+                "z": 25.18
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 89.0,
+            "coords": {
+                "x": 426.63,
+                "y": -969.79,
+                "z": 25.18
+            }
+        }
+    ]
+}

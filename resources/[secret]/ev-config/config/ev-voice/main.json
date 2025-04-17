@@ -1,0 +1,7 @@
+{
+    "configId": "ev-voice",
+    "data": {
+        "updateInterval": 1000,
+        "useScopeSize": false
+    }
+}

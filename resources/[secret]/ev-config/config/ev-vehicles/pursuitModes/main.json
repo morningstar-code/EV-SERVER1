@@ -1,0 +1,127 @@
+{
+    "configId": "ev-vehicles:pursuitModes",
+    "data": {
+        "presets": [
+            {
+                "id": "pursuitPolvette",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A+",
+                        "mods": {
+                            "Engine": 4,
+                            "Brakes": 4,
+                            "Transmission": 4,
+                            "Turbo": true
+                        },
+                        "appearance": null,
+                        "handling": [
+                            {
+                                "field": "fInitialDriveForce",
+                                "multiplier": 0.2970000
+                            },
+                            {
+                                "field": "fDriveInertia",
+                                "multiplier": 1.000000
+                            }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "mods": {
+                            "Engine": 4,
+                            "Brakes": 4,
+                            "Transmission": 4,
+                            "Turbo": true
+                        },
+                        "appearance": null,
+                        "handling": [
+                            {
+                                "field": "fInitialDriveForce",
+                                "multiplier": 0.3970000
+                            },
+                            {
+                                "field": "fDriveInertia",
+                                "multiplier": 1.000000
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "pursuitStang",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A+",
+                        "mods": {
+                            "Engine": 4,
+                            "Brakes": 4,
+                            "Transmission": 4,
+                            "Turbo": true
+                        },
+                        "appearance": null,
+                        "handling": [
+                            {
+                                "field": "fInitialDriveForce",
+                                "multiplier": 0.2970000
+                            },
+                            {
+                                "field": "fDriveInertia",
+                                "multiplier": 1.000000
+                            }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "mods": {
+                            "Engine": 4,
+                            "Brakes": 4,
+                            "Transmission": 4,
+                            "Turbo": true
+                        },
+                        "appearance": null,
+                        "handling": [
+                            {
+                                "field": "fInitialDriveForce",
+                                "multiplier": 0.3970000
+                            },
+                            {
+                                "field": "fDriveInertia",
+                                "multiplier": 1.000000
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "vehicles": [
+            {
+                "model": "npolvette",
+                "preset": "pursuitPolvette"
+            },
+            {
+                "model": "npolstang",
+                "preset": "pursuitPolvette"
+            },
+            {
+                "model": "npolchar",
+                "preset": "pursuitPolvette"
+            },
+            {
+                "model": "npolchal",
+                "preset": "pursuitPolvette"
+            }
+        ]
+    }
+}

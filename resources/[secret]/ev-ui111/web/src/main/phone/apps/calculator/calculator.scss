@@ -1,0 +1,111 @@
+.calculator-container {
+    height: 670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 100 14px "Roboto";
+    background: #000;
+
+    .calculator {
+        width: 100%;
+        height: 475px;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+
+        .calculator-display {
+            color: #fff;
+            background: #1c191c;
+            line-height: 130px;
+            font-size: 6em;
+            flex: 1 1;
+
+            .auto-scaling-text {
+                display: inline-block;
+                padding: 0 30px;
+                position: absolute;
+                right: 0;
+                -webkit-transform-origin: right;
+                transform-origin: right;
+            }
+        }
+
+        .calculator-keypad {
+            display: flex;
+
+            .calculator-key {
+                display: block;
+                background: none;
+                padding: 0;
+                font-family: inherit;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                cursor: pointer;
+                outline: none;
+                width: 33.333%;
+                height: 70px;
+                border: none;
+                border-top: 1px solid #777;
+                border-right: 1px solid #666;
+                text-align: center;
+                line-height: 70px;
+
+                &:active {
+                    box-shadow: inset 0 0 80px 0 rgba(0, 0, 0, .25);
+                }
+            }
+
+            .input-keys {
+                width: 75%;
+
+                .digit-keys {
+                    background: #e0e0e7;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap-reverse;
+
+                    .calculator-key {
+                        font-size: 2.25em;
+                    }
+
+                    .key-0 {
+                        width: 66.6666%;
+                        text-align: left;
+                        padding-left: 27px;
+                    }
+
+                    .key-dot {
+                        padding-top: 1em;
+                        font-size: .75em;
+                    }
+                }
+
+                .function-keys {
+                    display: flex;
+                    background: linear-gradient(180deg, #cacacc 0, #c4c2cc);
+
+                    .calculator-key {
+                        font-size: 2em;
+                    }
+
+                    .key-multiply {
+                        line-height: 50px;
+                    }
+                }
+            }
+
+            .operator-keys {
+                flex: 1 1;
+                background: linear-gradient(180deg, #fc9c17 0, #f77e1b);
+
+                .calculator-key {
+                    width: 100%;
+                    color: #fff;
+                    border-right: 0;
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}

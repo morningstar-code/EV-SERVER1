@@ -1,0 +1,49 @@
+-- local GeneralEntries, SubMenu = MenuEntries['meth'], {}
+
+-- local MethActions = {
+--     {
+--         data = {
+--             id = 'heroin:enterDoor',
+--             title = 'Enter Door',
+--             icon = '#heroin-enter-door',
+--             event = 'ev-heroin:house:enter',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             return exports['ev-inventory']:hasEnoughOfItem('heroinhousekey', 1, false) or exports['ev-heroin']:isInsideUnlockedDoorZone()
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'heroin:destroyProperty',
+--             title = 'Destroy Property',
+--             icon = '#heroin-destroy-property',
+--             event = 'ev-heroin:house:seize',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             return isPolice
+--         end
+--     },
+-- }
+
+-- Citizen.CreateThread(function()
+--     for index, data in ipairs(MethActions) do
+--         SubMenu[index] = data.data.id
+--         MenuItems[data.data.id] = data
+--     end
+--     GeneralEntries[#GeneralEntries+1] = {
+--         data = {
+--             id = 'heroin',
+--             icon = '#heroin-actions',
+--             title = 'Door Actions',
+--         },
+--         subMenus = SubMenu,
+--         isEnabled = function()
+--             local inside = exports['ev-heroin']:isInsideDoorZone()
+--             local hasKey = exports['ev-inventory']:hasEnoughOfItem('heroinhousekey', 1, false)
+--             local insideUnlocked = exports['ev-heroin']:isInsideUnlockedDoorZone()
+--             return not isDead and inside and (hasKey or insideUnlocked)
+--         end,
+--     }
+-- end)

@@ -1,0 +1,2254 @@
+.card-sleeve {
+	line-height: 0;
+	-webkit-perspective: 55.5555555556vh;
+	perspective: 55.5555555556vh;
+	-webkit-perspective-origin: 50%;
+	perspective-origin: 50%;
+
+	&:hover {
+		z-index: 1;
+	}
+}
+
+.card-sleeve--fade {
+	pointer-events: none;
+
+	.card {
+		opacity: .25;
+		-webkit-filter: saturate(.25) blur(.2777777778vh);
+		filter: saturate(.25) blur(.2777777778vh);
+	}
+
+	.card-sleeve__new {
+		opacity: 0;
+	}
+}
+
+.card-sleeve--graded {
+	padding: 6.25vh .8333333333vh 1.6666666667vh;
+}
+
+.card-sleeve__count {
+	z-index: 1;
+	pointer-events: none;
+	text-align: center;
+	border-radius: 1.1111111111vh;
+	position: absolute;
+	top: -.4166666667vh;
+	right: -.2083333333vh;
+	padding: .3472222222vh;
+	min-width: 1.6666666667vh;
+	min-height: 1.6666666667vh;
+	font-family: Arial, sans-serif;
+	font-size: .9722222222vh;
+	font-weight: 700;
+	line-height: .9722222222vh;
+	background-color: #222831;
+	color: #aed581;
+}
+
+.card-sleeve__new {
+	z-index: 1;
+	pointer-events: none;
+	text-align: center;
+	border-radius: 1.1111111111vh;
+	position: absolute;
+	border: .1388888889vh dashed #ff4081;
+	border-top-width: 0;
+	border-radius: .2083333333vh .2083333333vh .4861111111vh .4861111111vh;
+	inset: .4861111111vh .6944444444vh .3472222222vh .6944444444vh;
+}
+
+.card {
+	position: relative;
+	-webkit-perspective: 55.5555555556vh;
+	perspective: 55.5555555556vh;
+	-webkit-perspective-origin: 50%;
+	perspective-origin: 50%;
+	width: 16.6666666667vh;
+	height: 23.0555555556vh;
+	margin: 0 2.2222222222vh;
+	transition: .25s;
+	font-size: 0;
+	line-height: 0;
+}
+
+.card__back {
+	pointer-events: none;
+	z-index: -1;
+	transition: .25s;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	display: block;
+	background-repeat: no-repeat;
+	background-size: 141% auto;
+	background-position: top;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.card__front {
+	pointer-events: none;
+	z-index: -1;
+	transition: .25s;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	display: block;
+	background-repeat: no-repeat;
+	background-size: 141% auto;
+	background-position: top;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.card__front-burnt {
+	pointer-events: none;
+	z-index: -1;
+	transition: .25s;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	display: block;
+	background-repeat: no-repeat;
+	background-size: 141% auto;
+	background-position: top;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.card--common {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				position: absolute;
+				content: '# attr(data-number)';
+				z-index: 1;
+				bottom: 1.5277777778vh;
+				right: 2.2222222222vh;
+				font-size: .7638888889vh;
+				font-family: Arial, sans-serif;
+				font-weight: 700;
+			}
+
+			&:after {
+				content: '';
+				z-index: 1;
+				display: block;
+				width: .6944444444vh;
+				height: .6944444444vh;
+				position: absolute;
+				bottom: 1.1805555556vh;
+				right: 1.1805555556vh;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-image: url(https://npgtav.b-cdn.net/tcg-assets/common.webp);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			position: absolute;
+			content: '# attr(data-number)';
+			z-index: 1;
+			bottom: 1.5277777778vh;
+			right: 2.2222222222vh;
+			font-size: .7638888889vh;
+			font-family: Arial, sans-serif;
+			font-weight: 700;
+		}
+
+		&:after {
+			content: '';
+			z-index: 1;
+			display: block;
+			width: .6944444444vh;
+			height: .6944444444vh;
+			position: absolute;
+			bottom: 1.1805555556vh;
+			right: 1.1805555556vh;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(https://npgtav.b-cdn.net/tcg-assets/common.webp);
+		}
+	}
+}
+
+.card--promo {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				position: absolute;
+				content: '# attr(data-number)';
+				z-index: 1;
+				bottom: 1.5277777778vh;
+				right: 2.2222222222vh;
+				font-size: .7638888889vh;
+				font-family: Arial, sans-serif;
+				font-weight: 700;
+			}
+
+			&:after {
+				content: '';
+				z-index: 1;
+				display: block;
+				width: .6944444444vh;
+				height: .6944444444vh;
+				position: absolute;
+				bottom: 1.1805555556vh;
+				right: 1.1805555556vh;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-image: url(https://npgtav.b-cdn.net/tcg-assets/secret.webp);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			position: absolute;
+			content: '# attr(data-number)';
+			z-index: 1;
+			bottom: 1.5277777778vh;
+			right: 2.2222222222vh;
+			font-size: .7638888889vh;
+			font-family: Arial, sans-serif;
+			font-weight: 700;
+		}
+
+		&:after {
+			content: '';
+			z-index: 1;
+			display: block;
+			width: .6944444444vh;
+			height: .6944444444vh;
+			position: absolute;
+			bottom: 1.1805555556vh;
+			right: 1.1805555556vh;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(https://npgtav.b-cdn.net/tcg-assets/secret.webp);
+		}
+	}
+}
+
+.card--rare {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				position: absolute;
+				content: '# attr(data-number)';
+				z-index: 1;
+				bottom: 1.5277777778vh;
+				right: 2.2222222222vh;
+				font-size: .7638888889vh;
+				font-family: Arial, sans-serif;
+				font-weight: 700;
+			}
+
+			&:after {
+				content: '';
+				z-index: 1;
+				display: block;
+				width: .6944444444vh;
+				height: .6944444444vh;
+				position: absolute;
+				bottom: 1.1805555556vh;
+				right: 1.1805555556vh;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-image: url(https://npgtav.b-cdn.net/tcg-assets/rare.webp);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			position: absolute;
+			content: '# attr(data-number)';
+			z-index: 1;
+			bottom: 1.5277777778vh;
+			right: 2.2222222222vh;
+			font-size: .7638888889vh;
+			font-family: Arial, sans-serif;
+			font-weight: 700;
+		}
+
+		&:after {
+			content: '';
+			z-index: 1;
+			display: block;
+			width: .6944444444vh;
+			height: .6944444444vh;
+			position: absolute;
+			bottom: 1.1805555556vh;
+			right: 1.1805555556vh;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(https://npgtav.b-cdn.net/tcg-assets/rare.webp);
+		}
+	}
+}
+
+.card--secret {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				position: absolute;
+				content: '# attr(data-number)';
+				z-index: 1;
+				bottom: 1.5277777778vh;
+				right: 2.2222222222vh;
+				font-size: .7638888889vh;
+				font-family: Arial, sans-serif;
+				font-weight: 700;
+			}
+
+			&:after {
+				content: '';
+				z-index: 1;
+				display: block;
+				width: .6944444444vh;
+				height: .6944444444vh;
+				position: absolute;
+				bottom: 1.1805555556vh;
+				right: 1.1805555556vh;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-image: url(https://npgtav.b-cdn.net/tcg-assets/secret.webp);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			position: absolute;
+			content: '# attr(data-number)';
+			z-index: 1;
+			bottom: 1.5277777778vh;
+			right: 2.2222222222vh;
+			font-size: .7638888889vh;
+			font-family: Arial, sans-serif;
+			font-weight: 700;
+		}
+
+		&:after {
+			content: '';
+			z-index: 1;
+			display: block;
+			width: .6944444444vh;
+			height: .6944444444vh;
+			position: absolute;
+			bottom: 1.1805555556vh;
+			right: 1.1805555556vh;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(https://npgtav.b-cdn.net/tcg-assets/secret.webp);
+		}
+	}
+}
+
+.card--uncommon {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				position: absolute;
+				content: '# attr(data-number)';
+				z-index: 1;
+				bottom: 1.5277777778vh;
+				right: 2.2222222222vh;
+				font-size: .7638888889vh;
+				font-family: Arial, sans-serif;
+				font-weight: 700;
+			}
+
+			&:after {
+				content: '';
+				z-index: 1;
+				display: block;
+				width: .6944444444vh;
+				height: .6944444444vh;
+				position: absolute;
+				bottom: 1.1805555556vh;
+				right: 1.1805555556vh;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-image: url(https://npgtav.b-cdn.net/tcg-assets/uncommon.webp);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			position: absolute;
+			content: '# attr(data-number)';
+			z-index: 1;
+			bottom: 1.5277777778vh;
+			right: 2.2222222222vh;
+			font-size: .7638888889vh;
+			font-family: Arial, sans-serif;
+			font-weight: 700;
+		}
+
+		&:after {
+			content: '';
+			z-index: 1;
+			display: block;
+			width: .6944444444vh;
+			height: .6944444444vh;
+			position: absolute;
+			bottom: 1.1805555556vh;
+			right: 1.1805555556vh;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(https://npgtav.b-cdn.net/tcg-assets/uncommon.webp);
+		}
+	}
+}
+
+.card--common.no-number {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.card--common.no-rarity {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.card--promo.no-number {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.card--promo.no-rarity {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.card--rare.no-number {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.card--rare.no-rarity {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.card--secret.no-number {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.card--secret.no-rarity {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.card--uncommon.no-number {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.card--uncommon.no-rarity {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.card--common.card--alt-white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+	}
+}
+
+.card--common.card--corleone-steaks {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+				top: 1.5277777778vh;
+				right: 2.6388888889vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+			top: 1.5277777778vh;
+			right: 2.6388888889vh;
+		}
+	}
+}
+
+.card--common.card--white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--promo.card--alt-white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+	}
+}
+
+.card--promo.card--corleone-steaks {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+				top: 1.5277777778vh;
+				right: 2.6388888889vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+			top: 1.5277777778vh;
+			right: 2.6388888889vh;
+		}
+	}
+}
+
+.card--promo.card--white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--rare.card--alt-white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+	}
+}
+
+.card--rare.card--corleone-steaks {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+				top: 1.5277777778vh;
+				right: 2.6388888889vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+			top: 1.5277777778vh;
+			right: 2.6388888889vh;
+		}
+	}
+}
+
+.card--rare.card--white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--secret.card--alt-white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+	}
+}
+
+.card--secret.card--corleone-steaks {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+				top: 1.5277777778vh;
+				right: 2.6388888889vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+			top: 1.5277777778vh;
+			right: 2.6388888889vh;
+		}
+	}
+}
+
+.card--secret.card--white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--uncommon.card--alt-white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+	}
+}
+
+.card--uncommon.card--corleone-steaks {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+				top: 1.5277777778vh;
+				right: 2.6388888889vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+			top: 1.5277777778vh;
+			right: 2.6388888889vh;
+		}
+	}
+}
+
+.card--uncommon.card--white {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:after {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+
+			&:before {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:after {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+
+		&:before {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--common.card--mayor-june-2021 {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+
+			&:after {
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+
+		&:after {
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+	}
+}
+
+.card--promo.card--mayor-june-2021 {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+
+			&:after {
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+
+		&:after {
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+	}
+}
+
+.card--rare.card--mayor-june-2021 {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+
+			&:after {
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+
+		&:after {
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+	}
+}
+
+.card--secret.card--mayor-june-2021 {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+
+			&:after {
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+
+		&:after {
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+	}
+}
+
+.card--uncommon.card--mayor-june-2021 {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.3888888889vh;
+				bottom: auto;
+			}
+
+			&:after {
+				right: 3.3333333333vh;
+				bottom: .9722222222vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.3888888889vh;
+			bottom: auto;
+		}
+
+		&:after {
+			right: 3.3333333333vh;
+			bottom: .9722222222vh;
+		}
+	}
+}
+
+.card--common.card--vlc {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.8055555556vh;
+				bottom: auto;
+				color: #fff;
+			}
+
+			&:after {
+				right: 1.9444444444vh;
+				bottom: 1.1805555556vh;
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.8055555556vh;
+			bottom: auto;
+			color: #fff;
+		}
+
+		&:after {
+			right: 1.9444444444vh;
+			bottom: 1.1805555556vh;
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--promo.card--vlc {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.8055555556vh;
+				bottom: auto;
+				color: #fff;
+			}
+
+			&:after {
+				right: 1.9444444444vh;
+				bottom: 1.1805555556vh;
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.8055555556vh;
+			bottom: auto;
+			color: #fff;
+		}
+
+		&:after {
+			right: 1.9444444444vh;
+			bottom: 1.1805555556vh;
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--rare.card--vlc {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.8055555556vh;
+				bottom: auto;
+				color: #fff;
+			}
+
+			&:after {
+				right: 1.9444444444vh;
+				bottom: 1.1805555556vh;
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.8055555556vh;
+			bottom: auto;
+			color: #fff;
+		}
+
+		&:after {
+			right: 1.9444444444vh;
+			bottom: 1.1805555556vh;
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--secret.card--vlc {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.8055555556vh;
+				bottom: auto;
+				color: #fff;
+			}
+
+			&:after {
+				right: 1.9444444444vh;
+				bottom: 1.1805555556vh;
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.8055555556vh;
+			bottom: auto;
+			color: #fff;
+		}
+
+		&:after {
+			right: 1.9444444444vh;
+			bottom: 1.1805555556vh;
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--uncommon.card--vlc {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				top: 1.5972222222vh;
+				right: 1.8055555556vh;
+				bottom: auto;
+				color: #fff;
+			}
+
+			&:after {
+				right: 1.9444444444vh;
+				bottom: 1.1805555556vh;
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			top: 1.5972222222vh;
+			right: 1.8055555556vh;
+			bottom: auto;
+			color: #fff;
+		}
+
+		&:after {
+			right: 1.9444444444vh;
+			bottom: 1.1805555556vh;
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	}
+}
+
+.card--common.card--tuner {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				right: 1.5277777778vh;
+				bottom: .9027777778vh;
+			}
+
+			&:after {
+				right: .6944444444vh;
+				bottom: .5555555556vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			right: 1.5277777778vh;
+			bottom: .9027777778vh;
+		}
+
+		&:after {
+			right: .6944444444vh;
+			bottom: .5555555556vh;
+		}
+	}
+}
+
+.card--promo.card--tuner {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				right: 1.5277777778vh;
+				bottom: .9027777778vh;
+			}
+
+			&:after {
+				right: .6944444444vh;
+				bottom: .5555555556vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			right: 1.5277777778vh;
+			bottom: .9027777778vh;
+		}
+
+		&:after {
+			right: .6944444444vh;
+			bottom: .5555555556vh;
+		}
+	}
+}
+
+.card--rare.card--tuner {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				right: 1.5277777778vh;
+				bottom: .9027777778vh;
+			}
+
+			&:after {
+				right: .6944444444vh;
+				bottom: .5555555556vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			right: 1.5277777778vh;
+			bottom: .9027777778vh;
+		}
+
+		&:after {
+			right: .6944444444vh;
+			bottom: .5555555556vh;
+		}
+	}
+}
+
+.card--secret.card--tuner {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				right: 1.5277777778vh;
+				bottom: .9027777778vh;
+			}
+
+			&:after {
+				right: .6944444444vh;
+				bottom: .5555555556vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			right: 1.5277777778vh;
+			bottom: .9027777778vh;
+		}
+
+		&:after {
+			right: .6944444444vh;
+			bottom: .5555555556vh;
+		}
+	}
+}
+
+.card--uncommon.card--tuner {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				right: 1.5277777778vh;
+				bottom: .9027777778vh;
+			}
+
+			&:after {
+				right: .6944444444vh;
+				bottom: .5555555556vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			right: 1.5277777778vh;
+			bottom: .9027777778vh;
+		}
+
+		&:after {
+			right: .6944444444vh;
+			bottom: .5555555556vh;
+		}
+	}
+}
+
+.card--boe-promo {
+	.card__front-burnt {
+		.card__front-wrapper {
+			&:before {
+				color: #000;
+				bottom: 1.3888888889vh;
+				right: 1.6666666667vh;
+				z-index: 2;
+				content: attr(data-number);
+				width: 1.6666666667vh;
+				height: 1.6666666667vh;
+				line-height: 1.5277777778vh;
+				text-align: center;
+			}
+
+			&:after {
+				background-image: url(https://npgtav.b-cdn.net/tcg-assets/heart-blue.svg);
+				bottom: 1.3888888889vh;
+				right: 1.6666666667vh;
+				width: 1.6666666667vh;
+				height: 1.6666666667vh;
+			}
+		}
+	}
+
+	.card__front {
+		&:before {
+			color: #000;
+			bottom: 1.3888888889vh;
+			right: 1.6666666667vh;
+			z-index: 2;
+			content: attr(data-number);
+			width: 1.6666666667vh;
+			height: 1.6666666667vh;
+			line-height: 1.5277777778vh;
+			text-align: center;
+		}
+
+		&:after {
+			background-image: url(https://npgtav.b-cdn.net/tcg-assets/heart-blue.svg);
+			bottom: 1.3888888889vh;
+			right: 1.6666666667vh;
+			width: 1.6666666667vh;
+			height: 1.6666666667vh;
+		}
+	}
+}
+
+.card--holo {
+	&:not(.active) {
+		&:before {
+			content: '';
+			z-index: -1;
+			position: absolute;
+			top: 1.1111111111vh;
+			right: 1.1111111111vh;
+			bottom: 1.1111111111vh;
+			left: 1.1111111111vh;
+			transition: .25s;
+			-webkit-animation: glow 2s linear infinite;
+			animation: glow 2s linear infinite;
+			opacity: 0;
+		}
+
+		&:hover {
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.card.active {
+	.card__back {
+		-webkit-transform: rotateY(-180deg);
+		transform: rotateY(-180deg);
+	}
+
+	.card__front {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+
+	.card__front-burnt {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+.card__holo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	opacity: .5;
+	background-image: linear-gradient(115deg, transparent, #00e7ff 20%, #ff00e7 40%, transparent 50%, #00e7ff 60%, #ff00e7 80%, transparent);
+	background-size: 200% 200%;
+	mix-blend-mode: color-dodge;
+
+	&:before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		opacity: .75;
+		background-color: #000;
+		background-image: url(https://npgtav.b-cdn.net/tcg-assets/sparkles.gif);
+		background-position: 50%;
+		background-size: 180%;
+		mix-blend-mode: color-dodge;
+	}
+}
+
+.card__holo--holo {
+	left: 2.0833333333vh;
+	right: 2.0833333333vh;
+	bottom: 8.75vh;
+	top: 3.0555555556vh;
+	background-size: 275% 275%;
+
+	.card--boe-promo {
+		top: .1041666667vh;
+		right: .1041666667vh;
+		bottom: .1041666667vh;
+		left: .1041666667vh;
+		overflow: hidden;
+		border-radius: .5555555556vh;
+	}
+}
+
+.card--full-art {
+	.card__holo--holo {
+		top: 0;
+		right: 0;
+		bottom: -.0694444444vh;
+		left: 0;
+		overflow: hidden;
+		border-radius: .9027777778vh;
+	}
+}
+
+.card--tuner {
+	.card__holo--holo {
+		top: .0694444444vh;
+		right: .0694444444vh;
+		bottom: .0694444444vh;
+		left: .0694444444vh;
+		overflow: hidden;
+		border-radius: .625vh;
+	}
+}
+
+.card--alt-white {
+	.card__holo--holo {
+		top: .1041666667vh;
+		right: .1041666667vh;
+		bottom: .1041666667vh;
+		left: .1041666667vh;
+		overflow: hidden;
+		border-radius: .6944444444vh;
+	}
+}
+
+.card--corleone-steaks {
+	.card__holo--holo {
+		top: .1041666667vh;
+		right: .1041666667vh;
+		bottom: .1041666667vh;
+		left: .1041666667vh;
+		overflow: hidden;
+		border-radius: .6944444444vh;
+	}
+}
+
+.card--mayor-june-2021 {
+	.card__holo--holo {
+		top: .1041666667vh;
+		right: .1041666667vh;
+		bottom: .1041666667vh;
+		left: .1041666667vh;
+		overflow: hidden;
+		border-radius: .6944444444vh;
+	}
+}
+
+.card--vlc {
+	.card__holo--holo {
+		top: .1041666667vh;
+		right: .1041666667vh;
+		bottom: .1041666667vh;
+		left: .1041666667vh;
+		overflow: hidden;
+		border-radius: .6944444444vh;
+	}
+}
+
+.card__holo--reverse {
+	left: -.0694444444vh;
+	border-radius: .8333333333vh;
+	overflow: hidden;
+	-webkit-clip-path: polygon(6.2% 4%, 6.2% 96%, 11.2% 96%, 11.2% 11.6%, 89.2% 11.6%, 89.2% 63.6%, 11.2% 63.6%, 11.2% 96%, 94% 96%, 94.1% 4%);
+	clip-path: polygon(6.2% 4%, 6.2% 96%, 11.2% 96%, 11.2% 11.6%, 89.2% 11.6%, 89.2% 63.6%, 11.2% 63.6%, 11.2% 96%, 94% 96%, 94.1% 4%);
+}
+
+.binder--no-sparkles {
+	.card__holo {
+		&:before {
+			background-image: none;
+		}
+	}
+}
+
+.card__corners {
+	position: absolute;
+	inset: 0;
+	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.card__edge {
+	position: absolute;
+	inset: 0;
+	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.card__surface {
+	position: absolute;
+	inset: 0;
+	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.card__surface--1 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/surface/surface-1.webp);
+	opacity: 1;
+}
+
+.card__surface--2 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/surface/surface-2.webp);
+	opacity: 1;
+}
+
+.card__surface--3 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/surface/surface-3.webp);
+	opacity: 1;
+}
+
+.card__surface--4 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/surface/surface-4.webp);
+	opacity: 1;
+}
+
+.card__surface--5 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/surface/surface-5.webp);
+	opacity: .9;
+}
+
+.card__surface--6 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/surface/surface-6.webp);
+	opacity: .8;
+}
+
+.card__surface--7 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/surface/surface-7.webp);
+	opacity: .7;
+}
+
+.card__surface--8 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/surface/surface-8.webp);
+	opacity: .6;
+}
+
+.card__surface--9 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/surface/surface-9.webp);
+	opacity: .5;
+}
+
+.card__edge--1 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/edge/edge-1.webp);
+	opacity: 1;
+}
+
+.card__edge--2 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/edge/edge-2.webp);
+	opacity: 1;
+}
+
+.card__edge--3 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/edge/edge-3.webp);
+	opacity: 1;
+}
+
+.card__edge--4 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/edge/edge-4.webp);
+	opacity: 1;
+}
+
+.card__edge--5 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/edge/edge-5.webp);
+	opacity: .9;
+}
+
+.card__edge--6 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/edge/edge-6.webp);
+	opacity: .8;
+}
+
+.card__edge--7 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/edge/edge-7.webp);
+	opacity: .7;
+}
+
+.card__edge--8 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/edge/edge-8.webp);
+	opacity: .6;
+}
+
+.card__edge--9 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/edge/edge-9.webp);
+	opacity: .5;
+}
+
+.card__corners--1 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/corners/corners-1.webp);
+	opacity: 1;
+}
+
+.card__corners--2 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/corners/corners-2.webp);
+	opacity: 1;
+}
+
+.card__corners--3 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/corners/corners-3.webp);
+	opacity: 1;
+}
+
+.card__corners--4 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/corners/corners-4.webp);
+	opacity: 1;
+}
+
+.card__corners--5 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/corners/corners-5.webp);
+	opacity: .9;
+}
+
+.card__corners--6 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/corners/corners-6.webp);
+	opacity: .8;
+}
+
+.card__corners--7 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/corners/corners-7.webp);
+	opacity: .7;
+}
+
+.card__corners--8 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/corners/corners-8.webp);
+	opacity: .6;
+}
+
+.card__corners--9 {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/corners/corners-9.webp);
+	opacity: .5;
+}
+
+.card__centering {
+	position: absolute;
+	right: .9722222222vh;
+	left: .9722222222vh;
+	bottom: .9027777778vh;
+	top: .9027777778vh;
+	border: 0 solid #fff13c;
+}
+
+.card__centering--1 {
+	border-width: .2777777778vh 0 0 .3472222222vh;
+}
+
+.card__centering--2 {
+	border-width: 0 .2777777778vh .2777777778vh 0;
+}
+
+.card__centering--3 {
+	border-width: 0 0 .2083333333vh .2777777778vh;
+}
+
+.card__centering--4 {
+	border-width: 0 .2083333333vh .2083333333vh 0;
+}
+
+.card__centering--5 {
+	border-width: .1388888889vh .2083333333vh 0 0;
+}
+
+.card__centering--6 {
+	border-width: .1388888889vh 0 0 .1388888889vh;
+}
+
+.card__centering--7 {
+	border-width: .0694444444vh .1388888889vh 0 0;
+}
+
+.card__centering--8 {
+	border-width: 0 .0694444444vh .0694444444vh 0;
+}
+
+.card__centering--9 {
+	border-width: 0 0 0 .0694444444vh;
+}
+
+.card__centering--10 {
+	opacity: 0;
+}
+
+.card__marked-for-sale {
+	position: absolute;
+	bottom: -15px;
+	left: calc(50% - 15px);
+	z-index: 5;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #30475e;
+	color: #95ef77;
+	line-height: 32px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.card__case {
+	transition: .25s;
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/hard-case.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50%;
+	position: absolute;
+	inset: -7.8472222222vh -1.4583333333vh -1.6666666667vh;
+	z-index: 4;
+	pointer-events: none;
+}
+
+.card__case-details {
+	font-family: Arial, sans-serif;
+	font-size: .9722222222vh;
+	line-height: 1.1;
+	position: absolute;
+	top: 1.875vh;
+	white-space: nowrap;
+}
+
+.card__case-details.left {
+	left: 1.7361111111vh;
+	width: calc(75% - 1.73611vh);
+	text-align: left;
+}
+
+.card__case-details.right {
+	right: 1.7361111111vh;
+	width: calc(57.5% - 1.73611vh);
+	text-align: right;
+}
+
+.card__case--perfect {
+	background-image: url(https://npgtav.b-cdn.net/tcg-quality/hard-case-perfect.webp);
+
+	.card__case-details {
+		color: #fff;
+	}
+}
+
+.card--burnt-1 {
+	.card__burn {
+		-webkit-mask-image: url(https://npgtav.b-cdn.net/tcg-quality/burnt/burnt-1.webp);
+		-webkit-mask-size: contain;
+
+		&:after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			mix-blend-mode: multiply;
+			opacity: .9;
+			background-image: url(https://npgtav.b-cdn.net/tcg-quality/burnt/burnt-1.webp);
+			background-size: contain;
+		}
+	}
+}
+
+.card--burnt-2 {
+	.card__burn {
+		-webkit-mask-image: url(https://npgtav.b-cdn.net/tcg-quality/burnt/burnt-2.webp);
+		-webkit-mask-size: contain;
+
+		&:after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			mix-blend-mode: multiply;
+			opacity: .9;
+			background-image: url(https://npgtav.b-cdn.net/tcg-quality/burnt/burnt-2.webp);
+			background-size: contain;
+		}
+	}
+}
+
+.card--burnt-3 {
+	.card__burn {
+		-webkit-mask-image: url(https://npgtav.b-cdn.net/tcg-quality/burnt/burnt-3.webp);
+		-webkit-mask-size: contain;
+
+		&:after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			mix-blend-mode: multiply;
+			opacity: .9;
+			background-image: url(https://npgtav.b-cdn.net/tcg-quality/burnt/burnt-3.webp);
+			background-size: contain;
+		}
+	}
+}
+
+.card--burnt-4 {
+	.card__burn {
+		-webkit-mask-image: url(https://npgtav.b-cdn.net/tcg-quality/burnt/burnt-4.webp);
+		-webkit-mask-size: contain;
+
+		&:after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			mix-blend-mode: multiply;
+			opacity: .9;
+			background-image: url(https://npgtav.b-cdn.net/tcg-quality/burnt/burnt-4.webp);
+			background-size: contain;
+		}
+	}
+}
+
+.card--burn {
+	.card__front {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		-webkit-animation: burn-hide 5s linear forwards;
+		animation: burn-hide 5s linear forwards;
+		-webkit-animation-delay: 1.9s;
+		animation-delay: 1.9s;
+	}
+}
+
+.fire {
+	pointer-events: none;
+
+	video {
+		position: absolute;
+		width: 202%;
+		height: 202%;
+		left: -51.25%;
+		bottom: -17.75%;
+	}
+}
+
+@-webkit-keyframes glow {
+
+	0%,
+	to {
+		box-shadow: 0 0 .5787037037vh #fff, 0 -.6944444444vh 3.4722222222vh #00e7ff, -.6944444444vh .6944444444vh 3.4722222222vh #ff00e7, .6944444444vh .6944444444vh 3.4722222222vh #e7ff00;
+	}
+
+	33% {
+		box-shadow: 0 0 .5787037037vh #fff, 0 -.6944444444vh 3.4722222222vh #ff00e7, -.6944444444vh .6944444444vh 3.4722222222vh #e7ff00, .6944444444vh .6944444444vh 3.4722222222vh #00e7ff;
+	}
+
+	66% {
+		box-shadow: 0 0 .5787037037vh #fff, 0 -.6944444444vh 3.4722222222vh #e7ff00, -.6944444444vh .6944444444vh 3.4722222222vh #00e7ff, .6944444444vh .6944444444vh 3.4722222222vh #ff00e7;
+	}
+}
+
+@keyframes glow {
+
+	0%,
+	to {
+		box-shadow: 0 0 .5787037037vh #fff, 0 -.6944444444vh 3.4722222222vh #00e7ff, -.6944444444vh .6944444444vh 3.4722222222vh #ff00e7, .6944444444vh .6944444444vh 3.4722222222vh #e7ff00;
+	}
+
+	33% {
+		box-shadow: 0 0 .5787037037vh #fff, 0 -.6944444444vh 3.4722222222vh #ff00e7, -.6944444444vh .6944444444vh 3.4722222222vh #e7ff00, .6944444444vh .6944444444vh 3.4722222222vh #00e7ff;
+	}
+
+	66% {
+		box-shadow: 0 0 .5787037037vh #fff, 0 -.6944444444vh 3.4722222222vh #e7ff00, -.6944444444vh .6944444444vh 3.4722222222vh #00e7ff, .6944444444vh .6944444444vh 3.4722222222vh #ff00e7;
+	}
+}
+
+@-webkit-keyframes flip-over {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+
+	to {
+		-webkit-transform: rotateY(-1turn);
+		transform: rotateY(-1turn);
+	}
+}
+
+@keyframes flip-over {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+
+	to {
+		-webkit-transform: rotateY(-1turn);
+		transform: rotateY(-1turn);
+	}
+}
+
+@-webkit-keyframes burn-hide {
+	0% {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	to {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 -10%);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 -10%);
+	}
+}
+
+@keyframes burn-hide {
+	0% {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	to {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 -10%);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 -10%);
+	}
+}

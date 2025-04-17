@@ -1,0 +1,143 @@
+-- local GeneralEntries, SubMenu = MenuEntries['games'], {}
+
+-- local GameOptions = {
+--     {
+--         data = {
+--             id = 'games:leaveGame',
+--             title = 'Leave',
+--             icon = '#arcade-game-leave',
+--             event = 'ev-games:leaveLobby',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             return exports['ev-games']:isInStartedLobby()
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'games:restartGame',
+--             title = 'Restart',
+--             icon = '#arcade-game-restart',
+--             event = 'ev-games:restartGame',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             local inLobby = exports['ev-games']:isInStartedLobby()
+--             local isLeader = exports['ev-games']:isLobbyLeader()
+--             local canBeRestarted = exports['ev-games']:canBeRestarted()
+--             return inLobby and isLeader and canBeRestarted
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'games:endGame',
+--             title = 'End Game',
+--             icon = '#arcade-game-end',
+--             event = 'ev-games:endGame',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             local inLobby = exports['ev-games']:isInStartedLobby()
+--             local isLeader = exports['ev-games']:isLobbyLeader()
+--             return inLobby and isLeader
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'games:tdm:changeLoadout',
+--             title = 'Change Loadout',
+--             icon = '#arcade-airsoft-tdm-changeloadout',
+--             event = 'ev-games:airsoft:tdm:showLoadoutMenu',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             local inLobby = exports['ev-games']:isInStartedLobby()
+--             local isInTDM = exports['ev-games-airsoft']:isInTDM()
+--             local isSpawned = exports['ev-games-airsoft']:isSpawnedTDM()
+--             return inLobby and isInTDM and isSpawned
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'games:vtag:flipVeh',
+--             title = "Flip vehicle over",
+--             icon = '#arcade-vtag-flip',
+--             event = 'ev-games:vtag:flipVehicle',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             local inLobby = exports['ev-games']:isInStartedLobby()
+--             local game = exports['ev-games']:getGameOfLobby()
+--             local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--             if not vehicle then return false end
+--             local driver = GetPedInVehicleSeat(vehicle, -1)
+--             if not driver or driver ~= PlayerPedId() then return false end
+--             local rotation = GetEntityRotation(vehicle, 2)
+--             local isSideways = rotation.y < -88 or rotation.y > 88
+--             return inLobby and game == 'vehicle-tag' and (not IsVehicleOnAllWheels(vehicle) or isSideways)
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'games:vtag:resetIntoPlaying',
+--             title = "Reset into area",
+--             icon = '#arcade-vtag-reset',
+--             event = 'ev-games:vtag:resetArea',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             local inLobby = exports['ev-games']:isInStartedLobby()
+--             local game = exports['ev-games']:getGameOfLobby()
+--             local isInZone = exports['ev-games-vehicletag']:isInZone()
+--             return inLobby and game == 'vehicle-tag' and not isInZone
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'games:vtag:respawn',
+--             title = "Reset into area",
+--             icon = '#arcade-vtag-respawn',
+--             event = 'ev-games:vtag:respawn',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             local inLobby = exports['ev-games']:isInStartedLobby()
+--             local game = exports['ev-games']:getGameOfLobby()
+--             return inLobby and game == 'vehicle-tag' and isDead
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'games:stopSpectating',
+--             title = "Stop spectating",
+--             icon = '#arcade-stop-spectating',
+--             event = 'ev-games:stopSpectating',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             local inSpectating = exports['ev-games']:isSpectating()
+--             return inSpectating
+--         end
+--     },
+    
+-- }
+
+-- Citizen.CreateThread(function()
+--     for index, data in ipairs(GameOptions) do
+--         SubMenu[index] = data.data.id
+--         MenuItems[data.data.id] = data
+--     end
+--     GeneralEntries[#GeneralEntries+1] = {
+--         data = {
+--             id = 'arcade:gameOptions',
+--             title = 'Arcade',
+--             icon = '#arcade-game-options',
+--         },
+--         subMenus = SubMenu,
+--         isEnabled = function()
+--             local hasGame = exports['ev-games']:isInStartedLobby()
+--             local isSpectating = exports['ev-games']:isSpectating()
+--             return hasGame or isSpectating
+--         end,
+--     }
+-- end)

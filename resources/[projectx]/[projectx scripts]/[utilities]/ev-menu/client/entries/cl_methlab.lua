@@ -1,0 +1,198 @@
+local GeneralEntries, SubMenu = MenuEntries['meth'], {}
+
+-- local canStartCornering = false
+-- local showSellMethOption = false
+-- local hasCarTarget = false
+
+-- AddEventHandler("cn:target:changed", function(pEntity, pEntityType)
+--   if not pEntity or pEntityType ~= 2 then
+--     hasCarTarget = false
+--     return
+--   end
+--   hasCarTarget = true
+-- end)
+
+-- AddEventHandler("ev-meth:showSellDrugsMenuItem", function(type, b)
+--     if type == "cancorner" then
+--         canStartCornering = b
+--     end
+-- end)
+
+-- AddEventHandler("ev-polyzone:enter", function(name)
+--     if name == "meth_corner" then
+--         showSellMethOption = true
+--     end
+-- end)
+-- AddEventHandler("ev-polyzone:exit", function(name)
+--     if name == "meth_corner" then
+--         showSellMethOption = false
+--     end
+-- end)
+
+-- Citizen.CreateThread(function()
+--     GeneralEntries[#GeneralEntries+1] = {
+--         data = {
+--             id = "sellmeth",
+--             icon = "#walking",
+--             title = "Sell",
+--             event = "ev-meth:cornerSellProduct",
+--         },
+--         isEnabled = function()
+--             return not isDead and showSellMethOption and not canStartCornering and hasCarTarget
+--         end,
+--     }
+--     GeneralEntries[#GeneralEntries+1] = {
+--         data = {
+--             id = "sellmethfromcorner",
+--             icon = "#walking",
+--             title = "Corner",
+--             event = "ev-meth:cornerStartSelling",
+--         },
+--         isEnabled = function()
+--             return not isDead and canStartCornering
+--         end,
+--     }
+--     -- for index, data in ipairs(Options) do
+--     --     SubMenu[index] = data.data.id
+--     --     MenuItems[data.data.id] = {data = data.data, isEnabled = data.isEnabled}
+--     -- end
+--     -- GeneralEntries[#GeneralEntries+1] = {
+--     --     data = {
+--     --         id = "methlab",
+--     --         icon = "#walking",
+--     --         title = "Lab",
+--     --     },
+--     --     subMenus = SubMenu,
+--     --     isEnabled = function()
+--     --         return not isDead and inLab
+--     --     end,
+--     -- }
+-- end)
+
+-- -- local function checkObject(obj)
+-- --     return function()
+-- --         return not isDead and inLab and targetObject == obj
+-- --     end
+-- -- end
+
+-- -- local Options = {
+-- --     {
+-- --         data = {
+-- --             id = 'ev-meth:startCooking',
+-- --             title = "Start Cooking",
+-- --             icon = "#police-check",
+-- --             event = "ev-meth:startCooking",
+-- --         },
+-- --         isEnabled = checkObject("computer"),
+-- --     },
+-- --     {
+-- --         data = {
+-- --             id = 'ev-meth:adjustFridgeTemp',
+-- --             title = "Adjust Temperature",
+-- --             icon = "#police-check",
+-- --             event = "ev-meth:adjustFridgeTemp",
+-- --         },
+-- --         isEnabled = checkObject("fridge"),
+-- --     },
+-- --     {
+-- --         data = {
+-- --             id = 'ev-meth:adjustSteamLevel',
+-- --             title = "Adjust Levels",
+-- --             icon = "#police-check",
+-- --             event = "ev-meth:adjustSteamLevel",
+-- --         },
+-- --         isEnabled = checkObject("distil"),
+-- --     },
+-- --     {
+-- --         data = {
+-- --             id = 'ev-meth:adjustDistilSettings',
+-- --             title = "Adjust Settings",
+-- --             icon = "#police-check",
+-- --             event = "ev-meth:adjustDistilSettings",
+-- --         },
+-- --         isEnabled = checkObject("distil"),
+-- --     },
+-- --     {
+-- --         data = {
+-- --             id = 'ev-meth:adjustMixerTemp',
+-- --             title = "Adjust Temperature",
+-- --             icon = "#police-check",
+-- --             event = "ev-meth:adjustMixerTemp",
+-- --         },
+-- --         isEnabled = checkObject("mixer_temperature"),
+-- --     },
+-- --     {
+-- --         data = {
+-- --             id = 'ev-meth:addIngredient',
+-- --             title = "Add Ingredient",
+-- --             icon = "#police-check",
+-- --             event = "ev-meth:addIngredient",
+-- --         },
+-- --         isEnabled = checkObject("mixer_drop"),
+-- --     },
+-- --     {
+-- --         data = {
+-- --             id = 'ev-meth:adjustMixerSettings',
+-- --             title = "Adjust Settings",
+-- --             icon = "#police-check",
+-- --             event = "ev-meth:adjustMixerSettings",
+-- --         },
+-- --         isEnabled = checkObject("mixer_settings"),
+-- --     },
+-- --     {
+-- --         data = {
+-- --             id = 'ev-meth:pickupIngredient',
+-- --             title = "Pickup",
+-- --             icon = "#police-check",
+-- --             event = "ev-meth:pickupIngredient",
+-- --         },
+-- --         isEnabled = checkObject("ingredient"),
+-- --     },
+-- -- }
+-- local MethActions = {
+--     {
+--         data = {
+--             id = 'meth:enterDoor',
+--             title = 'Enter Door',
+--             icon = '#meth-enter-door',
+--             event = 'ev-meth:enterDoor',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             return exports['ev-inventory']:hasEnoughOfItem('methlabkey', 1, false) or exports['ev-meth']:isInsideUnlockedDoorZone() or isPolice
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'meth:destroyProperty',
+--             title = 'Destroy Property',
+--             icon = '#meth-destroy-property',
+--             event = 'ev-meth:seizeLab',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             return isPolice
+--         end
+--     },
+-- }
+
+-- Citizen.CreateThread(function()
+--     for index, data in ipairs(MethActions) do
+--         SubMenu[index] = data.data.id
+--         MenuItems[data.data.id] = data
+--     end
+--     GeneralEntries[#GeneralEntries+1] = {
+--         data = {
+--             id = 'meth',
+--             icon = '#meth-actions',
+--             title = 'Door Actions',
+--         },
+--         subMenus = SubMenu,
+--         isEnabled = function()
+--             local inside = exports['ev-meth']:isInsideDoorZone()
+--             local hasKey = exports['ev-inventory']:hasEnoughOfItem('methlabkey', 1, false)
+--             local insideUnlocked = exports['ev-meth']:isInsideUnlockedDoorZone()
+--             return not isDead and inside and (hasKey or insideUnlocked or isPolice)
+--         end,
+--     }
+-- end)

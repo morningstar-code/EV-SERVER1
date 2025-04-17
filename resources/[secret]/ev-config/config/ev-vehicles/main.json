@@ -1,0 +1,6 @@
+{
+    "configId": "ev-vehicles",
+    "data": {
+        "selfDrivingModels": ["teslapd"]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "name": "sanitation_worker",
+    "label": "Sanitation Worker",
+    "checkInName": "Sanitation Worker",
+    "icon": "trash-alt",
+    "headquarters": {
+        "x": -353,
+        "y": -1545,
+        "z": 26,
+        "h": 264
+    },
+    "npc": {
+        "jobid": "sanitation_worker",
+        "headquarters": {
+            "x": -353,
+            "y": -1545,
+            "z": 27,
+            "h": 264
+        },
+        "data": {
+            "pedType": 4,
+            "model": "s_m_y_garbage",
+            "distance": 150,
+            "settings": [
+                {
+                    "mode": "invincible",
+                    "active": true
+                },
+                {
+                    "mode": "ignore",
+                    "active": true
+                },
+                {
+                    "mode": "freeze",
+                    "active": true
+                }
+            ],
+            "flags": {
+                "isJobEmployer": true
+            }
+        }
+    },
+    "acceptPendingTimeout": 30000,
+    "vpn": false,
+    "capacity": 4,
+    "enabled": true
+}

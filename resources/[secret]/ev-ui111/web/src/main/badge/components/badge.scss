@@ -1,0 +1,218 @@
+.badge-app-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 32px;
+
+    .exterior-wrapper {
+        border-radius: 10px;
+        padding: 6px;
+        width: 500px;
+        height: 350px;
+    }
+
+    .exterior-wrapper-ff {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .interior-wrapper {
+        border: 2px dashed #3f3f3f;
+        border-radius: 10px;
+        height: calc(100% - 6px);
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1 1;
+    }
+
+    .left-column {
+        height: 100%;
+        box-shadow: inset -7px 0 5px 0 rgba(85, 85, 85, .35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-column {
+        height: 100%;
+        box-shadow: inset 7px 0 5px 0 rgba(85, 85, 85, .35);
+    }
+
+    .information-wrapper {
+        margin: 6px;
+        height: 90%;
+        width: 85%;
+        background-color: #fff;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, .75);
+        overflow: hidden;
+    }
+
+    .badge-wrapper {
+        margin: 6px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .badge {
+        width: 75%;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        background-color: #d3d3d3;
+        width: 100%;
+        height: 100%;
+
+        .profile-image-holder {
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+
+            img {
+                border: 4px solid #fff;
+                max-height: 105px;
+                max-width: 80%;
+            }
+        }
+
+        .name-info {
+            height: 60%;
+            background-color: #d3d3d3;
+            display: flex;
+            flex-direction: column;
+
+            .banner {
+                width: "100%";
+                height: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .callsign {
+                h6 {
+                    color: #000 !important;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    letter-spacing: .7 !important;
+                    font-weight: 600 !important;
+                    text-decoration: none !important;
+                    font-style: normal !important;
+                    -webkit-font-feature-settings: "smcp" !important;
+                    font-feature-settings: "smcp" !important;
+                    font-variant: small-caps !important;
+                    text-transform: none !important;
+                    width: 100% !important;
+                    text-align: center;
+                }
+
+                p {
+                    color: #000 !important;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    letter-spacing: .7 !important;
+                    font-weight: 600 !important;
+                    text-decoration: none !important;
+                    font-style: normal !important;
+                    -webkit-font-feature-settings: "smcp" !important;
+                    font-feature-settings: "smcp" !important;
+                    font-variant: small-caps !important;
+                    text-transform: none !important;
+                    width: 100% !important;
+                    text-align: center;
+                }
+
+                span {
+                    color: #000 !important;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    letter-spacing: .7 !important;
+                    font-weight: 600 !important;
+                    text-decoration: none !important;
+                    font-style: normal !important;
+                    -webkit-font-feature-settings: "smcp" !important;
+                    font-feature-settings: "smcp" !important;
+                    font-variant: small-caps !important;
+                    text-transform: none !important;
+                    width: 100% !important;
+                    text-align: center;
+                }
+
+                height: 40px;
+            }
+
+            .name-info-wrap {
+                h6 {
+                    color: #000 !important;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    letter-spacing: .7 !important;
+                    font-weight: 600 !important;
+                    text-decoration: none !important;
+                    font-style: normal !important;
+                    -webkit-font-feature-settings: "smcp" !important;
+                    font-feature-settings: "smcp" !important;
+                    font-variant: small-caps !important;
+                    text-transform: none !important;
+                    width: 100% !important;
+                    text-align: center;
+                }
+
+                p {
+                    color: #000 !important;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    letter-spacing: .7 !important;
+                    font-weight: 600 !important;
+                    text-decoration: none !important;
+                    font-style: normal !important;
+                    -webkit-font-feature-settings: "smcp" !important;
+                    font-feature-settings: "smcp" !important;
+                    font-variant: small-caps !important;
+                    text-transform: none !important;
+                    width: 100% !important;
+                    text-align: center;
+                }
+
+                span {
+                    color: #000 !important;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    letter-spacing: .7 !important;
+                    font-weight: 600 !important;
+                    text-decoration: none !important;
+                    font-style: normal !important;
+                    -webkit-font-feature-settings: "smcp" !important;
+                    font-feature-settings: "smcp" !important;
+                    font-variant: small-caps !important;
+                    text-transform: none !important;
+                    width: 100% !important;
+                    text-align: center;
+                }
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex: 1 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.documents-signatures-container {
+    >.signatures {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >.wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            >.sign-me {
+                display: flex !important;
+                justify-content: center !important;
+                margin-bottom: 16px !important;
+            }
+
+            >.signature {
+                display: flex;
+                margin: 8px 0;
+                padding: 8px 0;
+                align-items: center;
+                border-bottom: 1px solid #fff;
+
+                >.dot {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    height: 60px;
+                    width: 60px;
+                    background-color: #30475e;
+                    border-radius: 100%;
+                    padding: 8px;
+                    margin-right: 16px;
+                }
+
+                >.signee {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    text-transform: capitalize;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

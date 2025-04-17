@@ -1,0 +1,38 @@
+#dispatch-map-container {
+    .map-icon-ping {
+        color: #0d47a1;
+    }
+
+    .map-icon-call {
+        color: #1a237e;
+    }
+
+    .map-icon-unit {
+        color: #1a237e;
+    }
+
+    .map-icon-ems {
+        color: #ff6f00;
+    }
+
+    .map-tooltip {
+        background-color: unset;
+        border: unset;
+        opacity: 1;
+        box-shadow: unset;
+        font-size: 1.2rem;
+        color: #fff !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        letter-spacing: .7px;
+        font-weight: 600 !important;
+        text-decoration: none !important;
+        font-style: normal !important;
+        text-transform: uppercase !important;
+        width: 100% !important;
+        text-shadow: -1px 1px 0 #37474f, 1px 1px 0 #37474f, 1px -1px 0 #37474f, -1px -1px 0 #37474f;
+
+        &:before {
+            border: unset;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+import { makeStyles } from '@mui/styles';
+import { ResponsiveHeight, ResponsiveWidth } from '../../../../utils/responsive';
+
+export default makeStyles({
+    wrapper: {
+        height: '100vh',
+        width: '100vw',
+        display: 'flex',
+        flexDirection: 'column',
+        position: 'relative',
+    },
+    top: {
+        flex: 1,
+    },
+    bottom: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+        flexDirection: 'column',
+        flex: 1,
+    },
+    progressBarWrap: {
+        color: 'white',
+        backgroundColor: 'rgba(0,0,0,0.4)',
+        border: '2px solid #E6E6E5',
+        width: ResponsiveWidth(288),
+        height: ResponsiveHeight(40),
+        position: 'relative',
+    },
+    innerWrapper: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+        position: 'absolute',
+        left: 0,
+        top: 0,
+    },
+    progressBarInner: {
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        height: '100%',
+        backgroundColor: '#4F7CAC',
+        zIndex: 50,
+    },
+    loadingText: {
+        fontFamily: 'Arial, Helvetica, sans-serif !important',
+        letterSpacing: `${ResponsiveWidth(0.7)} !important`,
+        fontWeight: '600 !important',
+        textDecoration: 'none !important',
+        fontStyle: 'normal !important',
+        fontVariant: 'small-caps !important',
+        textTransform: 'none',
+        width: '100% !important',
+        textShadow: '-1px 1px 0 #37474F, 1px 1px 0 #37474F, 1px -1px 0 #37474F, -1px -1px 0 #37474F',
+        zIndex: 100,
+        color: 'white',
+        paddingLeft: '10px',
+    },
+    loadingTextDefault: {
+        fontFamily: 'Arial, Helvetica, sans-serif !important',
+        letterSpacing: `${ResponsiveWidth(0.7)} !important`,
+        fontWeight: '600 !important',
+        textDecoration: 'none !important',
+        fontStyle: 'normal !important',
+        fontVariant: 'small-caps !important',
+        textTransform: 'none',
+        width: '100% !important',
+        textShadow: '-1px 1px 0 #37474F, 1px 1px 0 #37474F, 1px -1px 0 #37474F, -1px -1px 0 #37474F',
+        zIndex: 100,
+        textAlign: 'center',
+    },
+    box: {
+        display: 'flex',
+        alignItems: 'center',
+    }
+});

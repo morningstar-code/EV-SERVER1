@@ -1,0 +1,47 @@
+{
+    "name": "impound",
+    "label": "Impound Worker",
+    "checkInName": "Impound Worker",
+    "icon": "warehouse",
+    "headquarters": {
+        "x": -191.7131,
+        "y": -1166.187,
+        "z": 23.671407,
+        "h": 315.09399
+    },
+    "npc": {
+        "jobid": "impound",
+        "headquarters": {
+            "x": -191.7131,
+            "y": -1166.187,
+            "z": 23.671407,
+            "h": 315.09399
+        },
+        "data": {
+            "pedType": 4,
+            "model": "a_m_m_prolhost_01",
+            "distance": 150,
+            "settings": [
+                {
+                    "mode": "invincible",
+                    "active": true
+                },
+                {
+                    "mode": "ignore",
+                    "active": true
+                },
+                {
+                    "mode": "freeze",
+                    "active": true
+                }
+            ],
+            "flags": {
+                "isJobEmployer": true
+            }
+        }
+    },
+    "acceptPendingTimeout": 30000,
+    "vpn": false,
+    "capacity": 2,
+    "enabled": true
+}
