@@ -1,1 +1,0 @@
-export function AddSharedVehicle(pVin: string, pNetId: number, pCoords: Vector3): void {}

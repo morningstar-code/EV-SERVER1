@@ -1,1 +1,0 @@
-declare const SetArtificialLightsStateAffectsVehicles: (state: boolean) => void

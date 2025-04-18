@@ -1,9 +1,0 @@
-//!!this.props.activity //temp solution
-
-//!!this.props.job && !this.props.group //temp solution
-
-//!isEditable || isNotesDocument || props.unlocked
-
-//!this.props.activity && !!this.props.group //temp solution
-
-//!this.props.job //temp solution
